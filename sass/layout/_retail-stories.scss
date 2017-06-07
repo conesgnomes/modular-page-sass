@@ -1,0 +1,16 @@
+.retail {
+  background-color: white;
+  margin-top: 15px;
+  img {
+    width: 40%;
+    float: left;
+  }
+  .retail-text {
+    width: 56%;
+    float: left;
+    padding-left: 15px;
+  }
+  p:last-of-type {
+    margin-top: 4px;
+  }
+}

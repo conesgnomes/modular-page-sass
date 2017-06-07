@@ -54,9 +54,26 @@ h2 {
 }
 
 .retail {
+  p {
+    margin: 0;
+  }
   p:first-of-type {
     font-family: 'Roboto', sans-serif;
+    font-size: .7em;
+    font-weight: 300;
+    letter-spacing: .05em;
     text-transform: uppercase;
     color: $latest-date;
+    margin-top: 30px;
+  }
+  span {
+    color: tomato;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  p:last-of-type {
+    font-size: .9em;
+    font-weight: 400;
   }
 }

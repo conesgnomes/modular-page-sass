@@ -480,10 +480,27 @@ h2 {
   color: #716a67;
 }
 
+.retail p {
+  margin: 0;
+}
 .retail p:first-of-type {
   font-family: 'Roboto', sans-serif;
+  font-size: .7em;
+  font-weight: 300;
+  letter-spacing: .05em;
   text-transform: uppercase;
   color: #968f8c;
+  margin-top: 30px;
+}
+.retail span {
+  color: tomato;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.retail p:last-of-type {
+  font-size: .9em;
+  font-weight: 400;
 }
 
 .header::after {
@@ -541,6 +558,22 @@ h2 {
   margin-left: 20px;
 }
 .latest-stories .latest {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+
+.retail-stories::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.retail-stories .divider {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+.retail-stories .retail {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
@@ -617,6 +650,23 @@ h2 {
 
 .latest-text {
   padding: 0 20px;
+}
+
+.retail {
+  background-color: white;
+  margin-top: 15px;
+}
+.retail img {
+  width: 40%;
+  float: left;
+}
+.retail .retail-text {
+  width: 56%;
+  float: left;
+  padding-left: 15px;
+}
+.retail p:last-of-type {
+  margin-top: 4px;
 }
 
 body {

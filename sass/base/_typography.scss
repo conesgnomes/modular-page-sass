@@ -1,0 +1,29 @@
+html {
+  font-family: 'Libre Baskerville' serif;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.latest {
+  p:first-of-type {
+    font-style: italic;
+  }
+  p:last-of-type {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
+}
+
+.retail {
+  p:first-of-type {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  }
+}

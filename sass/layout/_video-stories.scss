@@ -1,0 +1,17 @@
+.video-stories {
+  background-color: white;
+  margin-top: 15px;
+  .video-divider {
+    @include divider;
+  }
+  span {
+    color: $latest-date;
+  }
+  .video {
+    width: 100%;
+    margin-top: 15px;
+    img {
+      width: 100%
+    }
+  }
+}

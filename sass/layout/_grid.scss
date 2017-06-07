@@ -45,3 +45,10 @@
     @include grid-column(12);
   }
 }
+
+.video-stories {
+  @include grid-container;
+  .video-divider {
+    @include grid-column(12);
+  }
+}

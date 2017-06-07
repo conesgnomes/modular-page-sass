@@ -1,0 +1,37 @@
+.header {
+  @include grid-container;
+  .menu {
+    @include grid-column(4);
+  }
+  .logo {
+    @include grid-column(4);
+  }
+  .search {
+    @include grid-column(4);
+  }
+}
+
+.top-stories {
+  @include grid-container;
+  .story {
+    @include grid-column(12);
+  }
+}
+
+.ad {
+  @include grid-container;
+  .ad-container {
+    @include grid-column(8);
+    @include grid-push(2);
+  }
+}
+
+.latest-stories {
+  @include grid-container;
+  .divider {
+    @include grid-column(12);
+  }
+  .latest {
+    @include grid-column(12);
+  }
+}

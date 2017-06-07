@@ -1,9 +1,12 @@
 html {
-  font-family: 'Libre Baskerville' serif;
+  font-family: 'Trirong', serif;
 }
 
 h1 {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: .8em;
 }
 
 h2 {
@@ -11,13 +14,42 @@ h2 {
   text-transform: uppercase;
 }
 
+.menu {
+  i {
+    font-size: 1.5em;
+  }
+}
+
+.search {
+  i {
+  font-size: 1.5em;
+  }
+}
+
+.divider {
+  h2 {
+    font-size: 1em;
+    letter-spacing: .06em;
+  }
+  i {
+    color: orange;
+    font-size: .8em;
+  }
+}
 .latest {
+  p {
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: .05em;
+  }
   p:first-of-type {
     font-style: italic;
+    color: $latest-date;
   }
   p:last-of-type {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+    color: $subhead;
   }
 }
 
@@ -25,5 +57,6 @@ h2 {
   p:first-of-type {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    color: $latest-date;
   }
 }

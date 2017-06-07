@@ -1,0 +1,29 @@
+.header {
+  background-color: white;
+  padding: 0;
+  border-bottom: solid 1px $subhead;
+}
+
+.menu {
+  i {
+    padding: 15px 0 0 20px;
+  }
+}
+
+.logo {
+  img {
+    float: left;
+    height: 40px;
+    padding: 10px 10px 0 0;
+  }
+  h1 {
+    float: left;
+  }
+}
+
+.search {
+  i {
+    float: right;
+    padding: 15px 20px 0 0;
+  }
+}

@@ -1,0 +1,6 @@
+.story {
+  @include card-style;
+  h3 {
+    padding: 0 20px;
+  }
+}

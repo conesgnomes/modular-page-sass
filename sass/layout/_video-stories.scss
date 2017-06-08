@@ -1,6 +1,7 @@
 .video-stories {
   background-color: white;
   margin-top: 15px;
+
   .video-divider {
     @include divider;
     margin-bottom: 15px;
@@ -11,6 +12,7 @@
   .video {
     position: relative;
     width: 100%;
+
     img:first-of-type {
       width: 100%;
     }

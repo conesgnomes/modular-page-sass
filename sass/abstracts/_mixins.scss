@@ -24,3 +24,13 @@
     font-size: .8em;
   }
 }
+
+@mixin btn($background-color, $font-color) {
+  border-radius: 2px;
+  padding: 10px 15px;
+  background-color: $background-color;
+  border: none;
+  color: $font-color;
+  text-transform: uppercase;
+  font-weight: 200;
+}

@@ -4,10 +4,7 @@ footer {
     padding-top: 20px;
   }
   button {
-    background-color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 10px 15px;
+    @include btn(white, $footer);
   }
   ul {
     list-style: none;

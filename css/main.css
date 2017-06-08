@@ -531,11 +531,6 @@ footer li {
   text-transform: uppercase;
   letter-spacing: .08em;
 }
-footer button {
-  color: #706966;
-  text-transform: uppercase;
-  font-weight: 200;
-}
 footer p {
   font-size: .7em;
 }
@@ -776,6 +771,9 @@ body {
   float: left;
   padding-left: 15px;
 }
+.retail .retail-text button {
+  display: none;
+}
 .retail p:last-of-type {
   margin-top: 4px;
 }
@@ -786,6 +784,21 @@ body {
   }
   .retail img {
     margin-top: -25px;
+  }
+  .retail .retail-text span {
+    display: none;
+  }
+  .retail .retail-text button {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 25px;
+    border-radius: 2px;
+    padding: 10px 15px;
+    background-color: tomato;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
   }
 }
 
@@ -845,10 +858,13 @@ footer h4 {
   padding-top: 20px;
 }
 footer button {
-  background-color: white;
-  border: none;
   border-radius: 2px;
   padding: 10px 15px;
+  background-color: white;
+  border: none;
+  color: #706966;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 footer ul {
   list-style: none;

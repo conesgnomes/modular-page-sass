@@ -442,6 +442,11 @@ h1 {
   font-weight: 400;
   line-height: .8em;
 }
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}
 
 h2 {
   font-family: 'Roboto', sans-serif;
@@ -452,8 +457,21 @@ h2 {
   font-size: 1.5em;
 }
 
+.social i {
+  font-size: 1.5em;
+}
+
 .search i {
   font-size: 1.5em;
+}
+
+.nav {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: .06em;
 }
 
 @media only screen and (min-width: 690px) {
@@ -649,37 +667,96 @@ body {
   border-bottom: solid 0.5px #d3d0cf;
   height: 55px;
 }
-
-.menu {
+.header .menu {
   position: relative;
 }
-.menu i {
+.header .menu i {
   padding: 15px 0 0 30px;
 }
-
-.logo {
+.header .logo {
   position: absolute;
   left: 50%;
   top: -5%;
   transform: translateX(-50%);
 }
-.logo img {
+.header .logo img {
   float: left;
   height: 40px;
   padding-top: 10px;
 }
-.logo h1 {
+@media only screen and (min-width: 1024px) {
+  .header .logo img {
+    height: 56px;
+    padding-top: 15px;
+    padding-right: 5px;
+  }
+}
+.header .logo h1 {
   float: left;
 }
-
-.search {
+.header .search {
   position: absolute;
   right: 15px;
   top: 0;
 }
-.search i {
+.header .search i {
   float: right;
   padding: 15px 20px 0 0;
+}
+@media only screen and (min-width: 1024px) {
+  .header .search i {
+    padding-top: 25px;
+  }
+}
+.header .social {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    height: 80px;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header .social {
+    display: inline;
+  }
+  .header .social i {
+    position: absolute;
+    top: 25px;
+    padding-left: 20px;
+  }
+  .header .social i:first-child {
+    left: 20px;
+  }
+  .header .social i:nth-child(2) {
+    left: 45px;
+  }
+  .header .social i:nth-child(3) {
+    left: 70px;
+  }
+}
+
+.nav {
+  display: none;
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .nav {
+    background-color: white;
+    border-bottom: solid 0.5px #d3d0cf;
+    display: block;
+  }
+  .nav ul {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .nav ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .story {

@@ -8,4 +8,7 @@
 
 .latest-text {
   padding: 0 20px;
+  p:first-of-type {
+    margin-bottom: -10px;
+  }
 }

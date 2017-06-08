@@ -494,25 +494,9 @@ h2 {
   font-weight: 400;
 }
 
-.header::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-.header .menu {
-  width: calc(33.33333% - 26.66667px);
-  float: left;
-  margin-left: 20px;
-}
-.header .logo {
-  width: calc(33.33333% - 26.66667px);
-  float: left;
-  margin-left: 20px;
-}
-.header .search {
-  width: calc(33.33333% - 26.66667px);
-  float: left;
-  margin-left: 20px;
+.video i {
+  font-size: 4.3em;
+  color: #716a67;
 }
 
 .top-stories::after {
@@ -582,31 +566,48 @@ h2 {
 }
 
 .header {
+  position: relative;
   background-color: white;
   padding: 0;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-bottom: solid 0.5px #d3d0cf;
+  height: 55px;
 }
 
+.menu {
+  position: relative;
+  left: 10px;
+}
 .menu i {
   padding: 15px 0 0 20px;
 }
 
+.logo {
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  transform: translateX(-50%);
+}
 .logo img {
   float: left;
   height: 40px;
-  padding: 10px 10px 0 0;
+  padding-top: 10px;
 }
 .logo h1 {
   float: left;
 }
 
+.search {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
 .search i {
   float: right;
   padding: 15px 20px 0 0;
 }
 
 .story {
-  border: solid 1px #968f8c;
+  border: solid 1px #d3d0cf;
   background-color: white;
   margin-top: 15px;
 }
@@ -643,7 +644,7 @@ h2 {
 }
 
 .latest {
-  border: solid 1px #968f8c;
+  border: solid 1px #d3d0cf;
   background-color: white;
   margin-top: 15px;
 }
@@ -658,6 +659,9 @@ h2 {
 
 .latest-text {
   padding: 0 20px;
+}
+.latest-text p:first-of-type {
+  margin-bottom: -10px;
 }
 
 .retail {
@@ -683,6 +687,7 @@ h2 {
 }
 .video-stories .video-divider {
   border-bottom: solid 2px #716a67;
+  margin-bottom: 15px;
 }
 .video-stories .video-divider h2 {
   margin-bottom: 0;
@@ -697,11 +702,27 @@ h2 {
   color: #968f8c;
 }
 .video-stories .video {
+  position: relative;
   width: 100%;
-  margin-top: 15px;
 }
-.video-stories .video img {
+.video-stories .video img:first-of-type {
   width: 100%;
+}
+.video-stories .video i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-stories .video #logo-video {
+  width: 8%;
+  position: absolute;
+  top: 85%;
+  left: 85%;
+}
+
+.video-stories .video:nth-child(n+3) {
+  display: none;
 }
 
 body {

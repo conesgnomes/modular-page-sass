@@ -1,23 +1,28 @@
 .header {
+  position: relative;
   background-color: white;
   padding: 0;
-  // border-bottom: solid 1px $subhead;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.5),
-             -1px 1px 2px rgba(0,0,0,0.5);
-
+  border-bottom: solid .5px $border;
+  height: 55px;
 }
 
 .menu {
+  position: relative;
+  left: 10px;
   i {
     padding: 15px 0 0 20px;
   }
 }
 
 .logo {
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  transform: translateX(-50%);
   img {
     float: left;
     height: 40px;
-    padding: 10px 10px 0 0;
+    padding-top: 10px;
   }
   h1 {
     float: left;
@@ -25,6 +30,9 @@
 }
 
 .search {
+  position: absolute;
+  right: 15px;
+  top: 0;
   i {
     float: right;
     padding: 15px 20px 0 0;

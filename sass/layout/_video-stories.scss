@@ -3,15 +3,34 @@
   margin-top: 15px;
   .video-divider {
     @include divider;
+    margin-bottom: 15px;
   }
   span {
     color: $latest-date;
   }
   .video {
+    position: relative;
     width: 100%;
-    margin-top: 15px;
-    img {
-      width: 100%
+    img:first-of-type {
+      width: 100%;
     }
+    i {
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+    }
+    #logo-video {
+      width: 8%;
+      position: absolute;
+      top:85%;
+      left: 85%;
+    }
+  }
+}
+
+.video-stories {
+  .video:nth-child(n+3) {
+  display: none;
   }
 }

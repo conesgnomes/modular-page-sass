@@ -3,4 +3,17 @@
   img {
     width: 100%;
   }
+  img:last-of-type {
+    display: none;
+  }
+
+  @media #{$breakpoint-medium} {
+    img:first-of-type {
+      display: none;
+    }
+    img:last-of-type {
+      display: block;
+      border: solid 1px $border;
+    }
+  }
 }

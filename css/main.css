@@ -456,7 +456,7 @@ h2 {
   font-size: 1.5em;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 690px) {
   .top-stories h3 {
     font-size: .9em;
   }
@@ -549,7 +549,7 @@ body {
   float: left;
   margin-left: 20px;
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 690px) {
   .top-stories .story {
     width: calc(33.33333% - 26.66667px);
     float: left;
@@ -567,6 +567,13 @@ body {
   float: left;
   margin-left: 20px;
   margin-left: calc(16.66667% - 23.33333px + 40px);
+}
+@media only screen and (min-width: 690px) {
+  .ad .ad-container {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 .latest-stories::after {
@@ -669,7 +676,7 @@ body {
 .story h3 {
   padding: 0 20px 20px 20px;
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 690px) {
   .story {
     height: 325px;
     overflow: hidden;
@@ -685,6 +692,18 @@ body {
 }
 .ad img {
   width: 100%;
+}
+.ad img:last-of-type {
+  display: none;
+}
+@media only screen and (min-width: 690px) {
+  .ad img:first-of-type {
+    display: none;
+  }
+  .ad img:last-of-type {
+    display: block;
+    border: solid 1px #d3d0cf;
+  }
 }
 
 .divider {

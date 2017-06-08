@@ -13,4 +13,11 @@
   p:last-of-type {
     margin-top: 4px;
   }
+  @media #{$breakpoint-medium} {
+    height: 150px;
+    overflow: hidden;
+    img {
+      margin-top: -25px;
+    }
+  }
 }

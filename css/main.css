@@ -499,6 +499,11 @@ h2 {
   font-size: .9em;
   font-weight: 400;
 }
+@media only screen and (min-width: 690px) {
+  .retail p:last-of-type {
+    font-size: 1.1em;
+  }
+}
 
 .video p {
   font-family: 'Roboto', sans-serif;
@@ -773,6 +778,15 @@ body {
 }
 .retail p:last-of-type {
   margin-top: 4px;
+}
+@media only screen and (min-width: 690px) {
+  .retail {
+    height: 150px;
+    overflow: hidden;
+  }
+  .retail img {
+    margin-top: -25px;
+  }
 }
 
 .video-stories {

@@ -27,6 +27,9 @@
   }
   .latest {
     @include grid-column(12);
+    @media #{$breakpoint-medium} {
+      @include grid-column(6);
+    }
   }
 }
 

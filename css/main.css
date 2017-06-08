@@ -591,6 +591,13 @@ body {
   float: left;
   margin-left: 20px;
 }
+@media only screen and (min-width: 690px) {
+  .latest-stories .latest {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px;
+  }
+}
 
 .retail-stories::after {
   clear: both;
@@ -732,12 +739,23 @@ body {
   font-weight: 300;
   line-height: 1.3em;
 }
-
-.latest-text {
+.latest .latest-text {
   padding: 0 20px;
 }
-.latest-text p:first-of-type {
+.latest .latest-text p:first-of-type {
   margin-bottom: -10px;
+}
+
+@media only screen and (min-width: 690px) {
+  .latest-row {
+    height: 450px;
+  }
+  .latest-row .latest {
+    height: 100%;
+  }
+  .latest-row .latest img {
+    height: 50%;
+  }
 }
 
 .retail {

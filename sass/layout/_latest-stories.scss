@@ -4,11 +4,22 @@
 
 .latest {
   @include card-style;
+  .latest-text {
+    padding: 0 20px;
+    p:first-of-type {
+      margin-bottom: -10px;
+    }
+  }
 }
 
-.latest-text {
-  padding: 0 20px;
-  p:first-of-type {
-    margin-bottom: -10px;
+.latest-row {
+  @media #{$breakpoint-medium} {
+    height: 450px;
+    .latest {
+      height: 100%;
+      img {
+        height: 50%;
+      }
+    }
   }
 }

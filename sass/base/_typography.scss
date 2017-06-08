@@ -69,8 +69,38 @@ h2 {
 }
 
 .video {
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9em;
+    color: white;
+  }
   i {
     font-size: 4.3em;
     color: $subhead;
+  }
+}
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  li {
+    font-weight: 300;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  button {
+    color: $footer;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+  p {
+    font-size: .7em;
   }
 }

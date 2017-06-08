@@ -1,16 +1,3 @@
-// .header {
-//   @include grid-container;
-//   .menu {
-//     @include grid-column(3);
-//   }
-//   .logo {
-//     @include grid-column(6);
-//   }
-//   .search {
-//     @include grid-column(3);
-//   }
-// }
-
 .top-stories {
   @include grid-container;
   .story {

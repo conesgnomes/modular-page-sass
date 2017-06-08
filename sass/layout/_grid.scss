@@ -48,4 +48,12 @@
   .video-divider {
     @include grid-column(12);
   }
+  @media #{$breakpoint-medium} {
+    .video-1 {
+      @include grid-column(12);
+    }
+    .video:nth-child(n+3) {
+      @include grid-column(4);
+    }
+  }
 }

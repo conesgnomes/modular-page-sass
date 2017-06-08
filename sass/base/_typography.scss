@@ -79,17 +79,24 @@ h2 {
   }
 }
 
-.video {
-  p {
-    font-family: 'Roboto', sans-serif;
-    font-size: .9em;
-    color: white;
-  }
-  i {
-    font-size: 4.3em;
-    color: $subhead;
+.video-stories {
+  .video {
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: .9em;
+      color: white;
+    }
+    #main-video {
+      font-size: 4.3em;
+      color: $subhead;
+    }
+    i {
+      font-size: 2em;
+      color: tomato;
+    }
   }
 }
+
 
 footer {
   font-family: 'Roboto', sans-serif;

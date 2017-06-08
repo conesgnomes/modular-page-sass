@@ -1,7 +1,6 @@
 .video-stories {
   background-color: white;
   margin-top: 15px;
-
   .video-divider {
     @include divider;
     margin-bottom: 15px;
@@ -11,21 +10,20 @@
   }
   .video {
     position: relative;
-    width: 100%;
-
     img:first-of-type {
       width: 100%;
     }
     p {
       position: absolute;
+      display: inline-block;
       top: 13%;
-      left: 5%;
+      left: 4%;
     }
-    i {
+    #main-video {
       position: absolute;
       left: 50%;
-      top:50%;
-      transform: translate(-50%,-50%);
+      top: 45%;
+      transform: translateX(-50%);
     }
     #logo-video {
       width: 8%;
@@ -33,11 +31,27 @@
       top:85%;
       left: 85%;
     }
+    @media #{$breakpoint-medium} {
+      i {
+        position: absolute;
+        top: 80%;
+        left: 12%;
+        transform: translate(-50%, -50%);
+      }
+      p {
+        top: 4%;
+        left: 4%;
+      }
+    }
   }
 }
 
 .video-stories {
   .video:nth-child(n+3) {
   display: none;
+  @media #{$breakpoint-medium} {
+    display: inline-block;
+    margin-top: 5px;
+  }
   }
 }

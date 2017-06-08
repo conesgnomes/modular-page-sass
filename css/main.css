@@ -505,14 +505,18 @@ h2 {
   }
 }
 
-.video p {
+.video-stories .video p {
   font-family: 'Roboto', sans-serif;
   font-size: .9em;
   color: white;
 }
-.video i {
+.video-stories .video #main-video {
   font-size: 4.3em;
   color: #716a67;
+}
+.video-stories .video i {
+  font-size: 2em;
+  color: tomato;
 }
 
 footer {
@@ -625,6 +629,18 @@ body {
   float: left;
   margin-left: 20px;
 }
+@media only screen and (min-width: 690px) {
+  .video-stories .video-1 {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+  }
+  .video-stories .video:nth-child(n+3) {
+    width: calc(33.33333% - 26.66667px);
+    float: left;
+    margin-left: 20px;
+  }
+}
 
 .header {
   position: relative;
@@ -636,10 +652,9 @@ body {
 
 .menu {
   position: relative;
-  left: 10px;
 }
 .menu i {
-  padding: 15px 0 0 20px;
+  padding: 15px 0 0 30px;
 }
 
 .logo {
@@ -824,21 +839,21 @@ body {
 }
 .video-stories .video {
   position: relative;
-  width: 100%;
 }
 .video-stories .video img:first-of-type {
   width: 100%;
 }
 .video-stories .video p {
   position: absolute;
+  display: inline-block;
   top: 13%;
-  left: 5%;
+  left: 4%;
 }
-.video-stories .video i {
+.video-stories .video #main-video {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 45%;
+  transform: translateX(-50%);
 }
 .video-stories .video #logo-video {
   width: 8%;
@@ -846,9 +861,27 @@ body {
   top: 85%;
   left: 85%;
 }
+@media only screen and (min-width: 690px) {
+  .video-stories .video i {
+    position: absolute;
+    top: 80%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+  }
+  .video-stories .video p {
+    top: 4%;
+    left: 4%;
+  }
+}
 
 .video-stories .video:nth-child(n+3) {
   display: none;
+}
+@media only screen and (min-width: 690px) {
+  .video-stories .video:nth-child(n+3) {
+    display: inline-block;
+    margin-top: 5px;
+  }
 }
 
 footer {
@@ -869,9 +902,16 @@ footer button {
 footer ul {
   list-style: none;
   padding: 0;
+  margin-top: 20px;
 }
 footer ul li {
   padding-top: 20px;
+}
+@media only screen and (min-width: 690px) {
+  footer ul li {
+    display: inline;
+    padding: 0 15px 0 15px;
+  }
 }
 footer p {
   padding-bottom: 20px;

@@ -456,6 +456,12 @@ h2 {
   font-size: 1.5em;
 }
 
+@media only screen and (min-width: 650px) {
+  .top-stories h3 {
+    font-size: .9em;
+  }
+}
+
 .latest p {
   text-align: center;
   font-size: 0.8em;
@@ -542,6 +548,13 @@ body {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
+}
+@media only screen and (min-width: 650px) {
+  .top-stories .story {
+    width: calc(33.33333% - 26.66667px);
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 .ad::after {
@@ -654,7 +667,17 @@ body {
   line-height: 1.3em;
 }
 .story h3 {
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
+}
+@media only screen and (min-width: 650px) {
+  .story {
+    height: 325px;
+    overflow: hidden;
+  }
+  .story img {
+    height: 75%;
+    width: auto;
+  }
 }
 
 .ad {

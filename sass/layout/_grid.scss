@@ -17,6 +17,10 @@
     @media #{$breakpoint-medium} {
       @include grid-column(12);
     }
+    @media #{$breakpoint-large} {
+      @include grid-column(8);
+      @include grid-push(2);
+    }
   }
 }
 

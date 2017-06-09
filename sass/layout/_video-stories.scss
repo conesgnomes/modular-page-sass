@@ -1,6 +1,8 @@
 .video-stories {
   background-color: white;
   margin-top: 15px;
+  padding-bottom: 15px;
+  overflow: auto;
   .video-divider {
     @include divider;
     margin-bottom: 15px;

@@ -597,6 +597,14 @@ body {
     margin-left: 20px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .ad .ad-container {
+    width: calc(66.66667% - 33.33333px);
+    float: left;
+    margin-left: 20px;
+    margin-left: calc(16.66667% - 23.33333px + 40px);
+  }
+}
 
 .latest-stories::after {
   clear: both;
@@ -730,10 +738,10 @@ body {
     left: 20px;
   }
   .header .social i:nth-child(2) {
-    left: 45px;
+    left: 50px;
   }
   .header .social i:nth-child(3) {
-    left: 70px;
+    left: 80px;
   }
 }
 
@@ -763,9 +771,12 @@ body {
   border: solid 1px #d3d0cf;
   background-color: white;
   margin-top: 15px;
+  height: auto;
 }
 .story img {
   width: 100%;
+  object-position: left;
+  object-fit: cover;
 }
 .story h3 {
   text-align: center;
@@ -775,6 +786,9 @@ body {
 .story h3 {
   padding: 0 20px 20px 20px;
 }
+.story .story-img {
+  overflow: hidden;
+}
 @media only screen and (min-width: 690px) {
   .story {
     height: 325px;
@@ -782,7 +796,6 @@ body {
   }
   .story img {
     height: 75%;
-    width: auto;
   }
 }
 
@@ -825,6 +838,8 @@ body {
 }
 .latest img {
   width: 100%;
+  object-position: left;
+  object-fit: cover;
 }
 .latest h3 {
   text-align: center;
@@ -859,7 +874,7 @@ body {
   float: left;
 }
 .retail .retail-text {
-  width: 56%;
+  width: 50%;
   float: left;
   padding-left: 15px;
 }
@@ -897,6 +912,8 @@ body {
 .video-stories {
   background-color: white;
   margin-top: 15px;
+  padding-bottom: 15px;
+  overflow: auto;
 }
 .video-stories .video-divider {
   border-bottom: solid 2px #716a67;
@@ -963,6 +980,7 @@ body {
 
 footer {
   background-color: #706966;
+  overflow: auto;
 }
 footer h4 {
   padding-top: 20px;

@@ -3,12 +3,15 @@
   h3 {
     padding: 0 20px 20px 20px;
   }
+  .story-img {
+    overflow: hidden;
+  }
+  height: auto;
   @media #{$breakpoint-medium} {
     height: 325px;
     overflow: hidden;
     img {
       height: 75%;
-      width: auto;
     }
   }
 }
